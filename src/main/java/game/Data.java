@@ -4,10 +4,11 @@ import game.Core.Types.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
 public class Data {
+	public static int shaderProgram;
 	public static class Config
 	{
-		static boolean debug = false;
-		static WindowStruct window = new WindowStruct(1280,720,"",NULL,NULL);
-		static int vsync = 1;
+		public static boolean debug = false;
+		public static WindowStruct window = new WindowStruct(1280,720,"",NULL,NULL);
+		public static int vsync = 1;
 	}
 }

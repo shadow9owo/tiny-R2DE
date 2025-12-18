@@ -33,43 +33,56 @@
   </dependencyManagement>
 
   <dependencies>
-    <!-- LWJGL core -->
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl</artifactId>
-    </dependency>
+  <!-- LWJGL core -->
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl</artifactId>
+  </dependency>
 
-    <!-- OpenGL bindings -->
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl-opengl</artifactId>
-    </dependency>
+  <!-- OpenGL -->
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-opengl</artifactId>
+  </dependency>
 
-    <!-- GLFW (window/input) -->
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl-glfw</artifactId>
-    </dependency>
+  <!-- GLFW -->
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-glfw</artifactId>
+  </dependency>
 
-    <!-- natives -->
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl</artifactId>
-      <classifier>${lwjgl.natives}</classifier>
-    </dependency>
+  <!-- STB (stb_image) -->
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-stb</artifactId>
+  </dependency>
 
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl-opengl</artifactId>
-      <classifier>${lwjgl.natives}</classifier>
-    </dependency>
+  <!-- natives -->
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl</artifactId>
+    <classifier>${lwjgl.natives}</classifier>
+  </dependency>
 
-    <dependency>
-      <groupId>org.lwjgl</groupId>
-      <artifactId>lwjgl-glfw</artifactId>
-      <classifier>${lwjgl.natives}</classifier>
-    </dependency>
-  </dependencies>
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-opengl</artifactId>
+    <classifier>${lwjgl.natives}</classifier>
+  </dependency>
+
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-glfw</artifactId>
+    <classifier>${lwjgl.natives}</classifier>
+  </dependency>
+
+  <dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-stb</artifactId>
+    <classifier>${lwjgl.natives}</classifier>
+  </dependency>
+</dependencies>
+
 	
   <build>
     <defaultGoal>package</defaultGoal>
